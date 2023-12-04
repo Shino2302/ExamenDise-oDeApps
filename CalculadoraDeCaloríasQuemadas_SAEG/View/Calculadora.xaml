@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraDeCaloríasQuemadas_SAEG.View.Calculadora">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#0177B5">
+                <Label Text="Calculadora De Calorias"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       />
+            </Frame>
+            <Grid>
+                <Label Text="Peso En KG:"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       TextColor="#000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="25"
+                       />
+                <Entry Grid.Column="1"
+                       Grid.Row="0"
+                       Placeholder="Peso En KG"
+                       PlaceholderColor="#000"
+                       TextColor="#000"
+                       Text="{Binding PesoKG}"
+                       Keyboard="Numeric"
+                       />
+                <Label Text="Duración En Minutos:"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       TextColor="#000"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Margin="50,0,0,0"
+                       FontSize="25"
+                       />
+                <Entry Grid.Column="1"
+                       Grid.Row="1"
+                       Placeholder="Duarción En Minutos"
+                       PlaceholderColor="#000"
+                       TextColor="#000"
+                       Text="{Binding Duracion}"
+                       Keyboard="Numeric"
+                       />
+                
+                <Frame Grid.ColumnSpan="2"
+                       Grid.Row="2">
+                    <Button Text="Calcular"
+                            BackgroundColor="#F72"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            CornerRadius="25"
+                            Command="{Binding CalcularResultadocomand}"/>
+                </Frame>
+                <Frame Grid.ColumnSpan="2"
+                       Grid.Row="3"
+                       IsVisible="{Binding MostrarResultado}">
+                    <StackLayout>
+                        <Grid>
+                            <Label Grid.Row="0"
+                                   Text="Resultado: "
+                                   TextColor="Black"
+                                   FontAttributes="Bold"
+                                   FontSize="Large"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand"/>
+                            <Label Text="{Binding Resultado}"
+                                   TextColor="Black"
+                                   TextDecorations="Underline"
+                                   FontSize="Large"
+                                   Grid.Row="1"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="CenterAndExpand"
+                                   />
+                            <Label Grid.Row="2"
+                                   Text="Así te vas a poner:"
+                                   TextColor="Black"
+                                   FontSize="Medium"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand"
+                                   IsVisible="{Binding Foto}"/>
+                            
+                            <Image Source="GigaChat.jpg" 
+                                   Grid.Row="3"
+                                   HorizontalOptions="Center"
+                                   IsVisible="{Binding Foto}"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

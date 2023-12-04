@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OO2C040n94txNnOQ48htEoZ1E1HA/Mc2yHDuVeJfq0gLsPNuYCgjiS8BelKj9JB4CtckbtYfEwngDb278sMg/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cd19\\Downloads\\CalculadoraDeCaloríasQuemadas_SAEG\\CalculadoraDeCaloríasQuemadas_SAEG.iOS\\CalculadoraDeCaloríasQuemadas_SAEG.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cd19\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\cd19\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\cd19\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
